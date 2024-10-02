@@ -1,0 +1,73 @@
+#!/bin/bash 
+
+########################
+# Author: Pavan Kumar
+# Date:  01/10/2024
+# Version: V1
+# Description: This script is related to Server information
+#########################################
+
+ps-ef | grep amazon | awk"" '{print $2}'
+set -x # debug mode
+set -e # exit the script when there is a error
+set -o pipefail
+set -exo pipefail  # same as above syntax
+curl URL # curl command retrives the syntax
+wget URL # will download the link
+find
+-------------------------------------------
+if else # stmt
+a=5
+b=10
+
+if [$a > $b];
+then 
+echo "a value is greater than b"
+else
+echo "b value is greater than a"
+fi
+-------------------------------------------------
+
+write a script which is divisible by 3,5 and not divisible by 15
+
+#!/bin/bash
+#########
+# Author: Pavan
+# Date: 01/10/2024
+# Version: V1
+# Script Details: write a script which is divisible by 3,5 and not divisible by 15
+#########################################
+
+for i in {1...100}; do
+if (['exp $i % 3' == 0] || ['exp $i % 5' == 0]) && ['exp $i % 15' != 0]
+then
+ 	echo $i
+fi;
+done
+-------------------------------------------------------------------------------
+
+Print the nunber of S letters in the word Mississipi
+
+#!/bin/bash
+
+x=mississipi
+grep -o "s" <<< "$x" |  wc -l
+-----------------------------------------------------
+
+git commands
+git init
+git status
+git add filename
+git commit filename
+git push filename
+
+
+
+rice
+salt
+papu
+veg
+oil
+curd
+chintapandu
+godhama pindi
